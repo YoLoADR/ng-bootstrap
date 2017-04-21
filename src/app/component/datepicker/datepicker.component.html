@@ -1,0 +1,13 @@
+<p>
+  datepicker works!
+</p>
+
+<ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next" [displayMonths]="3" [navigation]="none"></ngb-datepicker>
+
+<hr/>
+
+<button class="btn btn-sm btn-outline-primary" (click)="selectToday()">Select Today</button>
+
+<hr/>
+
+<pre>Model: {{ model | json }}</pre>
